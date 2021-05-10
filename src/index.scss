@@ -3,3 +3,19 @@ $secondary: #28d3ee;
 @import '~bootstrap/scss/bootstrap';
 
 $text-white: #fff;
+
+.check-forecast {
+  align-self: center;
+  display: flex;
+}
+
+.zip-code-form-display {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.post {
+  color: $secondary;
+}

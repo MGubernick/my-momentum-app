@@ -4,5 +4,5 @@
 
 - Unsplash API - Random Photo
 - Open Weather API - Weather
-- Forismatic API - Quote
-- Moment - Clock
+- StormQuote - Quote
+- Luxon - Clock

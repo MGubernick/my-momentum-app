@@ -1,5 +1,12 @@
 import React, { Component, Fragment } from 'react';
-// import { Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+
+// import components that need routes
+import Weather from './components/Weather/Weather.js';
+import BackgroundImage from './components/Layout/Layout.js';
+import RandoQuote from './components/Quote/Quote.js';
+import Clock from './components/Clock/Clock.js';
+import Display from './components/Display/Display.js';
 
 class App extends Component {
   constructor (props) {
@@ -12,7 +19,21 @@ class App extends Component {
     return (
       <Fragment>
         <main>
-          <h1>This is where the content goes</h1>
+          <Route path='/weather' render={() => (
+            <Weather />
+          )} />
+          <Route path='/layout' render={() => (
+            <BackgroundImage />
+          )} />
+          <Route path='/quote' render={() => (
+            <RandoQuote />
+          )} />
+          <Route path='/clock' render={() => (
+            <Clock />
+          )} />
+          <Route path='/display' render={() => (
+            <Display />
+          )} />
         </main>
       </Fragment>
     );
