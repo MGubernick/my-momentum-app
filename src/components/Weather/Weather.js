@@ -31,6 +31,10 @@ class WeatherShow extends Component {
 
   };
 
+  clearZip = () => {
+    this.setState({ weather: '', zipCode: '', city: '', description: '', feelsLike: '', humidity: '' })
+  };
+
   handleSubmit = event => {
     event.preventDefault();
 
@@ -54,9 +58,8 @@ class WeatherShow extends Component {
       forecastDisplay = ''
     } else {
       forecastDisplay = (
-    <div className="forecast-div">
-      <Card className="display-card">
-        {/* <Card.Img className="img" src="https://imgur.com/8QcpYfB.png" alt="Card image" /> */}
+    <div className="forecast-div" style={{ border: '1px solid #000', opacity: '0.5' }}>
+      <Card className="display-card" onClick={this.clearZip}>
         <Card.Text className="city key"><strong>Your Forecast for:</strong> {city} </Card.Text>
         <Card.Text className="key"><strong>Current Temp:</strong> {weather}°F &nbsp; (feels like: {feelsLike})</Card.Text>
         <Card.Text className="key"><strong>What To Expect:</strong></Card.Text>
@@ -65,7 +68,7 @@ class WeatherShow extends Component {
           <br/>
           {description}
         </Card.Text>
-</Card>
+      </Card>
     </div>
   );
 };
@@ -73,7 +76,6 @@ class WeatherShow extends Component {
     return (
       <div className="zip-code-form-display">
         <br/>
-        <h4 className="check-forecast">Lets Check The Forecast!</h4>
         <ZipCodeForm
         weather={weather}
         handleChange={this.handleChange}

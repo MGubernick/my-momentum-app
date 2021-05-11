@@ -39,9 +39,9 @@ class RandoQuote extends Component {
   render () {
     const { quote, quoteAuthor } = this.state
     return (
-      <div style={{ alignItems: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center'}} >
-        <h5 style={{ justifyContent: 'center' }}>{quote}</h5>
-        <p><small>- {quoteAuthor}</small> </p>
+      <div style={{ alignItems: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'space-around', padding: '10px'}} >
+        <h3 style={{ padding: '12px' }}>"{quote}"</h3>
+        <p style={{ fontSize: '20px' }}><small>- {quoteAuthor}</small> </p>
       </div>
     );
   };

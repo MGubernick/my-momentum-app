@@ -1,21 +1,31 @@
 $primary: #000;
 $secondary: #28d3ee;
 @import '~bootstrap/scss/bootstrap';
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;1,700&display=swap');
 
 $text-white: #fff;
 
 .check-forecast {
   align-self: center;
   display: flex;
-}
+};
+
+.display-card {
+  color: $primary;
+  font-weight: 900;
+  text-shadow: .5px .5px #28d3ee;
+  padding: 10px;
+};
+
+.display-post {
+  color: $secondary;
+  font-family: 'Balsamiq Sans', cursive;
+  text-shadow: 1px 1px $primary;
+};
 
 .zip-code-form-display {
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.post {
-  color: $secondary;
-}
+};
