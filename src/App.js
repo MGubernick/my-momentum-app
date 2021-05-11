@@ -53,7 +53,7 @@ class App extends Component {
           <Route path='/clock' render={() => (
             <Clock />
           )} />
-          <Route path='/display' render={() => (
+          <Route exact path='/' render={() => (
             <Display />
           )} />
         </main>
