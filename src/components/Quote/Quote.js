@@ -34,6 +34,11 @@ class RandoQuote extends Component {
 
   componentDidMount () {
     // hit the unsplash API
+    // axios.get(`${config.apiUrl}`)
+    //   .then(res => this.setState({ quote: res.data.quote, quoteAuthor: res.data.author }))
+    //   .catch(error => {
+    //     console.error('oops: ', error.message);
+    //   })
     axios.get(`${config.apiUrl}`)
       .then(res => {
         const randQuote = res.data[Math.floor(Math.random() * res.data.length)]
@@ -53,7 +58,7 @@ class RandoQuote extends Component {
     return (
       <div style={{ alignItems: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'space-around', padding: '10px'}} >
         <h3 style={{ padding: '12px' }}>"{quote}"</h3>
-        <p style={{ fontSize: '20px' }}><small>- {quoteAuthor ? quoteAuthor : 'unknown'}</small> </p>
+        <p style={{ fontSize: '20px' }}><small>- {quoteAuthor}</small> </p>
       </div>
     );
   };

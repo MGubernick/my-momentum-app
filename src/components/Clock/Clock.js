@@ -21,7 +21,7 @@ class Clock extends Component {
   render () {
     const { date, time } = this.state
     return (
-      <div style={{ alignItems: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+      <div className='clock' style={{ alignItems: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
         <h1 style={{ fontSize: '50px' }}>{date}</h1>
         <h1 style={{ fontSize: '50px' }}>{time}</h1>
       </div>

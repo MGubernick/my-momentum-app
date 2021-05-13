@@ -58,7 +58,7 @@ class WeatherShow extends Component {
       forecastDisplay = ''
     } else {
       forecastDisplay = (
-    <div className="forecast-div" style={{ border: '1px solid #000', opacity: '0.5' }}>
+    <div className="forecast-div" style={{ border: '1px solid #000', marginTop: '250px', marginRight: '18px', opacity: '0.5' }}>
       <Card className="display-card" onClick={this.clearZip}>
         <Card.Text className="city key"><strong>Your Forecast for:</strong> {city} </Card.Text>
         <Card.Text className="key"><strong>Current Temp:</strong> {weather}°F &nbsp; (feels like: {feelsLike})</Card.Text>
