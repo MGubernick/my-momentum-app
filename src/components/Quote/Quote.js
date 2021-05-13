@@ -58,7 +58,7 @@ class RandoQuote extends Component {
     return (
       <div style={{ alignItems: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'space-around', padding: '10px'}} >
         <h3 style={{ padding: '12px' }}>"{quote}"</h3>
-        <p style={{ fontSize: '20px' }}><small>- {quoteAuthor}</small> </p>
+        <p style={{ fontSize: '20px' }}><small>- {quoteAuthor ? quoteAuthor : 'unknown'}</small> </p>
       </div>
     );
   };
