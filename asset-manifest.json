@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/my-momentum-app/static/css/main.422098c7.chunk.css",
-    "main.js": "/my-momentum-app/static/js/main.7a245d8b.chunk.js",
-    "main.js.map": "/my-momentum-app/static/js/main.7a245d8b.chunk.js.map",
+    "main.css": "/my-momentum-app/static/css/main.d896d9f5.chunk.css",
+    "main.js": "/my-momentum-app/static/js/main.221b13fe.chunk.js",
+    "main.js.map": "/my-momentum-app/static/js/main.221b13fe.chunk.js.map",
     "runtime-main.js": "/my-momentum-app/static/js/runtime-main.4194f7ae.js",
     "runtime-main.js.map": "/my-momentum-app/static/js/runtime-main.4194f7ae.js.map",
     "static/js/2.adf8671a.chunk.js": "/my-momentum-app/static/js/2.adf8671a.chunk.js",
     "static/js/2.adf8671a.chunk.js.map": "/my-momentum-app/static/js/2.adf8671a.chunk.js.map",
     "index.html": "/my-momentum-app/index.html",
-    "static/css/main.422098c7.chunk.css.map": "/my-momentum-app/static/css/main.422098c7.chunk.css.map",
+    "static/css/main.d896d9f5.chunk.css.map": "/my-momentum-app/static/css/main.d896d9f5.chunk.css.map",
     "static/js/2.adf8671a.chunk.js.LICENSE.txt": "/my-momentum-app/static/js/2.adf8671a.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.4194f7ae.js",
     "static/js/2.adf8671a.chunk.js",
-    "static/css/main.422098c7.chunk.css",
-    "static/js/main.7a245d8b.chunk.js"
+    "static/css/main.d896d9f5.chunk.css",
+    "static/js/main.221b13fe.chunk.js"
   ]
 }
